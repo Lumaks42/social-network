@@ -1,0 +1,124 @@
+.blockDialogs{
+    display: flex;
+}
+
+.dialog{
+    display: flex;
+    align-items: flex-end;
+    align-self: flex-start;
+    flex-direction: column;
+    height: 100%;
+    padding: 5px;
+    background-color: #5E5E5E;
+    margin-bottom: 10px;
+}
+
+.active{
+    border: 1px solid #0094d8;
+    border-left: 7px solid #0094d8;
+}
+
+.idDialog{
+    width: 200px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    display: flex;
+    font-size: 16px;
+}
+
+.blockInputMsg{
+    display: flex;
+    flex-direction: column;
+}
+
+.contentMessage{
+    position: relative;
+    left: 10px;
+}
+
+.photoId{
+    width: 42px;
+    height: 42px;    
+}
+
+.messages{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    
+    width: 575px;
+    background: rgba(0, 0, 0, 0.5);
+    height: 70vh;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-right: 3px solid #5e5e5e;
+}
+
+.msg{
+    display: flex;
+    align-items: center;
+}
+
+.msgImg{
+    width: 42px;
+}
+
+.polyImg{
+    width: 16px;
+    height: 16px;
+    transform: rotate(180deg);
+}
+
+.blockMessage{
+    margin-top: 5px;
+}
+
+.msgInfo{
+    margin-right: 20px;
+}
+
+.blockId{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField{
+    border: 0;
+    background-color: black;
+    border-right: 3px solid #5e5e5e;
+    height: 45px;
+    resize: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px 20px;
+}
+
+.blockBtn{
+    margin-top: -43px;
+    margin-left: 530px;
+    position: relative;
+}
+
+.btnFile{
+    background-color: #4576D6;
+    margin-right: 10px;
+}
+
+.btnMsg{
+    background-color: #45D66E;
+}
+
+.btnMsg, .btnFile{
+    width: 28px;
+    height: 28px;
+}
+
+.btn{
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+}

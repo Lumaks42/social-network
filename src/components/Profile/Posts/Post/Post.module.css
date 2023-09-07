@@ -1,0 +1,12 @@
+.item{
+    margin: 2% 0;
+    padding: 1% 2%;
+    border-left: 3px solid white;
+}
+
+.item__author{
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    align-items: center;
+}

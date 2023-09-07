@@ -1,0 +1,42 @@
+header{
+    width: 964px;
+    height: 60px;
+    padding: 1% 2% 0 1%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    grid-area: header;
+}
+
+h2{
+    position: relative;
+    height: 60%;
+    width: 20%;
+    text-align: center;
+    background: linear-gradient(360deg, rgb(114, 59, 177) 50%, transparent 50%);
+}
+
+.header__btn{
+    border: none;
+    border-radius: 0;
+    background: white;
+    border-right: 3px solid white;
+    padding: 1%;
+    transition: .3s;
+}
+
+.header__btn:hover{
+    border-right: 3px solid skyblue;
+    background-color: rgba(79, 179, 255, 0.3);
+    transition: .5s;
+}
+
+.header__imgBtn{
+    width: 32px;
+    height: 32px;
+}
+
+.logo{
+    width: 64px;
+}
+  
