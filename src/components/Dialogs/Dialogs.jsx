@@ -35,7 +35,7 @@ const MsgItem = (props) => {
 const Dialogs = () => {
     let dialogsData = [
         {id: 1, name: 'Lumaks', msgMin: 'Война - это мир,'},
-        {id: 2, name: 'Lumaks', msgMin: 'Что-то идет не'},
+        {id: 2, name: 'Lumaks', msgMin: 'Is that a'},
         {id: 3, name: 'Lumaks', msgMin: 'Уверена, что нам'},
         {id: 4, name: 'Lumaks', msgMin: 'Народ, вы где? a'},
         {id: 5, name: 'Lumaks', msgMin: 'Война - это мир,'},
@@ -43,13 +43,13 @@ const Dialogs = () => {
     ]
 
     let messagesData = [
-        {id: 1, text: 'Война - это мир'},
-        {id: 2, text: 'Что такое жизнь?'},
-        {id: 3, text: 'Квантовые скачки,'},
+        {id: 1, name: 'Lumaks', textMsg: 'Hey, Professor. I need brain food.'},
+        {id: 2, name: 'Arkein', textMsg: "I think you're thinking too much."},
+        {id: 3, name: 'Lumaks', textMsg: 'Is that a bad thing?'},
     ]
     return <div className={d.blockDialogs}>
         <div className={d.dialog}>
-            <DialogsItem/>
+            <DialogsItem />
             <div className={d.active}>
                 <DialogsItem />
             </div>
@@ -59,8 +59,8 @@ const Dialogs = () => {
         </div>
         <div className={d.blockInputMsg}>
             <div className={d.messages}>
-                <MsgItem name="Lumaks" textMsg="Привет профессор. Нужна пища для размышлений."/>
-                <MsgItem name="Arkein" textMsg="Мне кажется, ты достаточно много мыслишь)"/>
+                <MsgItem />
+                <MsgItem />
             </div>
             <div className={d.blockInputMsg}>
                 <input className={d.inputField}/>
