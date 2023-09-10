@@ -3,34 +3,39 @@
 }
 
 .dialog{
+    font-family: oswald, Arial, Helvetica, sans-serif;
     display: flex;
     align-items: flex-end;
-    align-self: flex-start;
     flex-direction: column;
     height: 100%;
-    padding: 5px;
     background-color: #5E5E5E;
     margin-bottom: 10px;
 }
 
+.dlgLink{
+    display: flex;
+    width: 230px;
+    margin: 0 auto;
+}
+
 .active{
-    border: 1px solid #0094d8;
     border-left: 7px solid #0094d8;
+    background: #0094d84a;
+    transform: scale(1.06);
+}
+
+.photoId{
+    display: flex;
+    align-items: flex-end;
 }
 
 .idDialog{
-    width: 200px;
     display: flex;
     align-items: flex-end;
     position: relative;
-    display: flex;
     font-size: 16px;
 }
 
-.blockInputMsg{
-    display: flex;
-    flex-direction: column;
-}
 
 .contentMessage{
     position: relative;
@@ -43,14 +48,12 @@
 }
 
 .messages{
-    position: relative;
+    width: 520px;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    
-    width: 575px;
     background: rgba(0, 0, 0, 0.5);
-    height: 70vh;
+    height: 65vh;
     margin-bottom: 10px;
     padding: 20px;
     border-right: 3px solid #5e5e5e;
@@ -63,6 +66,7 @@
 
 .msgImg{
     width: 42px;
+    height: 42px;
 }
 
 .polyImg{
@@ -73,6 +77,7 @@
 
 .blockMessage{
     margin-top: 5px;
+    margin-left: 15px;
 }
 
 .msgInfo{
@@ -84,26 +89,35 @@
     flex-direction: column;
 }
 
+.blockInputMsg{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .inputField{
+    display: flex;
     border: 0;
     background-color: black;
-    border-right: 3px solid #5e5e5e;
     height: 45px;
     resize: none;
     outline: none;
     font-size: 16px;
-    padding: 5px 20px;
+    padding: 10px;
+    width: 81%;
 }
 
 .blockBtn{
-    margin-top: -43px;
-    margin-left: 530px;
-    position: relative;
+    width: 100px;
+    display: flex;
+    align-items: flex-end;
+    align-self: flex-start;
+    justify-content: space-around;
 }
 
 .btnFile{
     background-color: #4576D6;
-    margin-right: 10px;
 }
 
 .btnMsg{
@@ -111,14 +125,15 @@
 }
 
 .btnMsg, .btnFile{
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
+    padding: 3px;
 }
 
 .btn{
     border: none;
     border-radius: 0;
     padding: 0;
-    width: 32px;
-    height: 32px;
+    width: 28px;
+    height: 28px;
 }
