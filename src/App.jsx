@@ -10,7 +10,7 @@ import './App.css'
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import News from './components/News/News';
 
-function App() {
+function App(props) {
 
   return (
     <BrowserRouter>
@@ -19,12 +19,12 @@ function App() {
       <Navbar/>
         <div className='app__content'>
         <Routes>
-          <Route path='/tasks'      Component={Tasks}/>
-          <Route path='/profile'    Component={Profile}/>
-          <Route exact path='/dialogs/'    Component={Dialogs}/>
-          <Route path='/news'       Component={News}/>
-          <Route path='/Knowledge'  Component={Knowledge}/>
-          <Route path='/settings'   Component={Settings}/>
+          <Route path='/tasks'      Component={() => <Tasks/>}/>
+          <Route path='/profile'    Component={() => <Profile postsData={props.postsData}/>}/>
+          <Route path='/dialogs/'   Component={() => <Dialogs/>}/>
+          <Route path='/news'       Component={() => <News/>}/>
+          <Route path='/knowledge'  Component={() => <Knowledge/>}/>
+          <Route path='/settings'   Component={() => <Settings/>}/>
         </Routes>
         </div>
       </div>

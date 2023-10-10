@@ -34,7 +34,7 @@ const MsgItem = (props) => {
     )
 }
 
-const Dialogs = () => {
+const Dialogs = (props) => {
     let dlgData = [
         {id: 1, name: 'Lumaks', msgMin: 'Война - это мир,'},
         {id: 2, name: 'Arkein', msgMin: 'Is that a skaint '},
@@ -60,6 +60,7 @@ const Dialogs = () => {
         </div>
         <div>
             <div className={d.messages}>
+                <p className={d.msgNumDay}>09.14-23</p>
                 {messages}
             </div>
             <div className={d.blockInputMsg}>

@@ -62,6 +62,7 @@
 .msg{
     display: flex;
     align-items: center;
+    padding: 2% 3%;
 }
 
 .msgImg{
@@ -78,6 +79,10 @@
 .blockMessage{
     margin-top: 5px;
     margin-left: 15px;
+}
+
+.msgNumDay{
+    text-align: center;
 }
 
 .msgInfo{
