@@ -19,12 +19,12 @@ function App(props) {
       <Navbar/>
         <div className='app__content'>
         <Routes>
-          <Route path='/tasks'      Component={() => <Tasks/>}/>
-          <Route path='/profile'    Component={() => <Profile postsData={props.postsData}/>}/>
-          <Route path='/dialogs/'   Component={() => <Dialogs/>}/>
-          <Route path='/news'       Component={() => <News/>}/>
-          <Route path='/knowledge'  Component={() => <Knowledge/>}/>
-          <Route path='/settings'   Component={() => <Settings/>}/>
+          <Route path='/tasks'      element={<Tasks/>}/>
+          <Route path='/profile'    element={<Profile state = {props.appState.profilePage}/>}/>
+          <Route path='/dialogs'    element={<Dialogs state = {props.appState.messagePage}/>}/>
+          <Route path='/news'       element={<News/>}/>
+          <Route path='/knowledge'  element={<Knowledge/>}/>
+          <Route path='/settings'   element={<Settings/>}/>
         </Routes>
         </div>
       </div>

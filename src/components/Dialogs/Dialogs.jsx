@@ -35,27 +35,13 @@ const MsgItem = (props) => {
 }
 
 const Dialogs = (props) => {
-    let dlgData = [
-        {id: 1, name: 'Lumaks', msgMin: 'Война - это мир,'},
-        {id: 2, name: 'Arkein', msgMin: 'Is that a skaint '},
-        {id: 3, name: 'Luksi', msgMin: 'Уверена, что нам'},
-        {id: 4, name: 'Kain', msgMin: 'Народ, вы где? a'},
-        {id: 5, name: 'Avele', msgMin: 'Мне кажется вы не'},
-        {id: 6, name: 'Stocks', msgMin: 'Что значит не зан'},
-    ]
 
-    let msgData = [
-        {id: 1, name: 'Lumaks', textMsg: 'Hey, Professor. I need brain food.'},
-        {id: 2, name: 'Arkein', textMsg: "I think you're thinking too much."},
-        {id: 3, name: 'Lumaks', textMsg: 'Is that a bad thing?'},
-    ]
+    let dialogs = props.state.dlgData.map(dlg => <DlgItem name={dlg.name} id={dlg.id} msgMin={dlg.msgMin}/>)
 
-    let dialogs = dlgData.map(dlg => <DlgItem name={dlg.name} id={dlg.id} msgMin={dlg.msgMin}/>)
-
-    let messages = msgData.map(msg => <MsgItem name={msg.name} id={msg.id} textMsg={msg.textMsg}/>)
+    let messages = props.state.msgData.map(msg => <MsgItem name={msg.name} id={msg.id} textMsg={msg.textMsg}/>)
 
     return <div className={d.blockDialogs}>
-        <div className={d.dialog}>
+        <div className={d.dialog }>
             {dialogs}
         </div>
         <div>
