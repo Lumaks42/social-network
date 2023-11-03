@@ -1,12 +1,21 @@
 import React from 'react'
 import cp from './CreatePost.module.css'
 
-const CreatePost = () => {
+const CreatePost = (props) => {
+
+  let newPostElm = React.createRef();
+
+  let addNewPost = () => {
+    let text = newPostElm.current.value;
+    props.addPost(text);
+    newPostElm.current.value = '';
+  }
+
   return <div className={cp.createPost}>
   <div className={cp.posts}>
   <div className={cp.posts__blockNewPost}>
-      <textarea className={cp.posts__inputFields}/>
-      <button className={cp.posts__button}>Отправить</button>
+      <textarea ref={newPostElm} className={cp.posts__inputFields}/>
+      <button onClick = { addNewPost } className={cp.posts__button}>Отправить</button>
   </div>
   </div>
 </div>

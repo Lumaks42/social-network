@@ -1,3 +1,5 @@
+import { rerenderAllTree } from "../render";
+
 let state = {
     profilePage: {
         postsData: [
@@ -23,6 +25,29 @@ let state = {
             {id: 3, name: 'Lumaks', textMsg: 'Is that a bad thing?'},
         ]
     }
+}
+
+export let addPost = (postMessage) => {
+    let newPost = {
+        id: 5,
+        name: 'Roma',
+        postText: postMessage,
+        likes: 0
+    };
+
+    state.profilePage.postsData.push(newPost);
+    rerenderAllTree(state);
+}
+
+export let addMsg = (newText) => {
+    let newMsg = {
+        id: 3, 
+        name: 'Loomax',
+        textMsg: newText,
+    };
+
+    state.messagePage.msgData.push(newMsg);
+    rerenderAllTree(state);
 }
 
 export default state;

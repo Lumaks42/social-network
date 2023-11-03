@@ -11,7 +11,7 @@ const Posts = (props) => {
     <div>
       <h2 className={p.posts__bigText}>My posts</h2>
       <br/>
-      <CreatePost/>
+      <CreatePost addPost = {props.addPost} />
       <div>
         {posts}
       </div>
